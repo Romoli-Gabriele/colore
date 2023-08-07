@@ -1,6 +1,6 @@
 <template>
   <br>
-  <canvas id="tela" :height="h" :width="w" :class="color">
+  <canvas id="tela" :height="h" :width="w" :style="'background-color: '+color">
   </canvas>
   <br>
   <button class="btn">SI</button>
@@ -24,16 +24,13 @@ export default {
       h: 500,
       w: 500,
       t: 1000,
-      color: 'red'
+      color: 'rgb(500, 500, 50)',
     }
   },
 }
 </script>
 
 <style scoped>
-.red {
-  background-color: rgb(78, 117, 97);
-}
 .btn{
   background-color: rgb(119, 119, 119);
   color: white;
